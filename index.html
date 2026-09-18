@@ -1,153 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-br" data-contexto="foco">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fokus</title>
-    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
-    <script src="./script-crud.js" defer></script>
-    <link rel="manifest" href="manifest.json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Dadilton Bastos Melo — Ciência de Dados, Business Intelligence e Machine Learning.">
+  <meta name="theme-color" content="#071a2b">
+  <title>Dadilton Melo | Ciência de Dados & BI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="#topo" aria-label="Página inicial de Dadilton Melo">
+        <span class="brand-mark">DM</span><span>Dadilton Melo</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a>
+        <a class="nav-cta" href="#contato">Vamos conversar</a>
+      </nav>
+    </div>
+  </header>
 
-<body>    
-    <script>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Ciência de Dados · BI · Machine Learning</p>
+          <h1>Transformo dados em <span>decisões que fazem sentido.</span></h1>
+          <p class="hero-text">Sou Dadilton Bastos Melo, cientista de dados, gestor, professor e pesquisador. Conecto análise, tecnologia e contexto de negócio para construir soluções úteis — e explicáveis.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="https://github.com/dadilton" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <ul class="hero-notes" aria-label="Resumo profissional">
+            <li>📍 São Luís, MA</li><li>🏛️ Dados no setor público</li><li>🎓 Ensino & pesquisa</li>
+          </ul>
+        </div>
 
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker
-                .register("./service-worker.js")
-                .then(function (registration) {
-                    console.log("Service Worker registrado com sucesso:", registration);
-                })
-                .catch(function (error) {
-                    console.log("Falha ao registrar o Service Worker:", error);
-                });
-            }
+        <div class="data-card reveal" aria-label="Painel visual de competências">
+          <div class="card-top"><span>visão_geral.py</span><span class="live"><i></i> em execução</span></div>
+          <div class="metric-main"><small>Foco principal</small><strong>Dados → Impacto</strong><span>Análise com propósito e rigor</span></div>
+          <div class="mini-chart" aria-hidden="true">
+            <div style="--h:42%"></div><div style="--h:58%"></div><div style="--h:49%"></div><div style="--h:72%"></div><div style="--h:67%"></div><div style="--h:91%"></div><div style="--h:84%"></div><div class="accent" style="--h:100%"></div>
+          </div>
+          <div class="card-stats"><div><strong>BI</strong><span>Decisão</span></div><div><strong>ML</strong><span>Predição</span></div><div><strong>ETL</strong><span>Confiança</span></div></div>
+          <p class="code-line"><span>def</span> transformar(dados): <em>return</em> conhecimento</p>
+        </div>
+      </div>
+    </section>
 
-    </script>    
+    <section class="marquee" aria-label="Áreas de conhecimento"><div>Python <span>✦</span> SQL <span>✦</span> Power BI <span>✦</span> Machine Learning <span>✦</span> Visualização de Dados <span>✦</span> Pesquisa Operacional <span>✦</span> Python <span>✦</span> SQL <span>✦</span> Power BI <span>✦</span> Machine Learning <span>✦</span> Visualização de Dados <span>✦</span> Pesquisa Operacional <span>✦</span></div></section>
 
-    <main class="app">
-        <header class="app__header">
-            <figure class="app__logo-figure">
-                <img class="app__logo-image" src="/imagens/logo.png" alt="">
-            </figure>
-        </header>
-        <section class="app__section-banner-container">
-            <h1 class="app__title">
-                Otimize sua produtividade,<br>
-                <strong class="app__title-strong">mergulhe no que importa.</strong>
-            </h1>
-            <figure class="app__image-figure">
-                <img class="app__image" src="/imagens/foco.png" alt="">
-            </figure>
-        </section>
-        <section class="app__section-card-container">
-            <div class="app__card">
-                <ul class="app__card-list">
-                    <li class="app__card-list-item">
-                        <button data-contexto="foco" class="app__card-button app__card-button--foco active">Foco</button>
-                    </li>
-                    <li class="app__card-list-item">
-                        <button data-contexto="short" class="app__card-button app__card-button--curto">Descanso curto</button>
-                    </li>
-                    <li class="app__card-list-item">
-                        <button data-contexto="long" class="app__card-button app__card-button--longo">Descanso longo</button>
-                    </li>
-                </ul>
-                <div id="timer" class="app__card-timer"></div>
-                <ul class="app__card-list">
-                    <li class="app__card-list-item">
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li class="app__card-list-item">
-                        <label class="app__card-list-label" for="alternar-musica">
-                            Música
-                        </label>
-                    </li>
-                </ul>
-                <div class="app__card-primary-button-wrapper">
-                    <button id="start-pause" class="app__card-primary-button">
-                        <img class="app__card-primary-butto-icon" src="/imagens/play_arrow.png" alt="">
-                        <span>Começar</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="app__section-task-container">
-            <div class="app__section-task-content">
-                <header class="app__section-active-task">
-                    <p class="app__section-active-task-label">#Em andamento:</p>
-                    <p class="app__section-active-task-description"></p>
-                </header>
-                <div class="app__section-task-header">
-                    <h2 class="app__section-tasks-heading">Lista de tarefas:</h2>
-                    <div class="dropdown-container">
-                        <button class="app_button-more">
-                            <img src="/imagens/more.svg" alt="">
-                        </button>
-                        <ul class="app__section-task-header__ul">
-                            <li class="app__section-task-header__li">
-                                <button class="app__section-task-header__li__button" id="btn-remover-concluidas">
-                                    <img src="/imagens/check.svg" alt="">
-                                    Limpar tarefas concluídas
-                                </button>
-                            </li>
-                            <li class="app__section-task-header__li">
-                                <button class="app__section-task-header__li__button" id="btn-remover-todas">
-                                    <img src="/imagens/trash.svg" alt="">
-                                    Limpar todas as tarefas
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="app__section-task-list"></ul>
-                <form class="app__form-add-task hidden" aria-hidden="true">
-                    <div class="app__form-field">
-                        <label class="app__form-label">
-                            Adicionando tarefa
-                        </label>
-                        <textarea required rows="4" class="app__form-textarea" placeholder="No que você está trabalhando?"></textarea>
-                    </div>
-                    <footer class="app__form-footer">
-                        <button type="button" class="app__form-footer__button app__form-footer__button--delete">
-                            <img src="/imagens/delete.png" alt=""> Deletar
-                        </button>
-                        <div class="splitter"></div>
-                        <button type="button" class="app__form-footer__button app__form-footer__button--cancel">
-                            <img src="/imagens/close.png" alt=""> Cancelar
-                        </button>
-                        <button class="app__form-footer__button app__form-footer__button--confirm">
-                            <img src="/imagens/save.png" alt=""> Salvar
-                        </button>
-                    </footer>
-                </form>
-                <button class="app__button--add-task">
-                    <img src="/imagens/add_circle.png" alt=""> Adicionar nova tarefa
-                </button>
-            </div>
-        </section>
+    <section class="section" id="sobre">
+      <div class="container two-cols">
+        <div class="section-heading reveal"><p class="kicker">01 · Sobre</p><h2>Curiosidade técnica.<br>Visão humana.</h2></div>
+        <div class="about-copy reveal">
+          <p class="lead">Gosto de problemas complexos, mas acredito que a melhor solução é aquela que as pessoas conseguem compreender e usar.</p>
+          <p>Atuo na gestão de Ciência de Dados e Business Intelligence no Tribunal de Justiça do Estado do Maranhão, liderando iniciativas que apoiam decisões, melhoram processos e aproximam dados da gestão pública.</p>
+          <p>Também sou professor e pesquisador. No mestrado em Ciência da Computação, investigo meta-heurísticas e otimização; em sala de aula, traduzo tecnologia em conhecimento acessível e aplicável.</p>
+          <div class="principles"><span>Rigor analítico</span><span>Comunicação clara</span><span>Impacto real</span></div>
+        </div>
+      </div>
+    </section>
 
-        <footer class="app__footer">
-            <p class="app__footer-text">
-                Projeto fictício e sem fins comerciais. Imagens geradas por IA no Adobe Firefly.Desenvolvido por Alura. 
-            </p>
-        </footer>
-    </main>
+    <section class="section section-dark" id="atuacao">
+      <div class="container">
+        <div class="section-heading horizontal reveal"><div><p class="kicker">02 · Atuação</p><h2>Onde dados encontram propósito.</h2></div><p>Da pergunta inicial à entrega: estratégia, engenharia, análise e comunicação.</p></div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal"><span class="card-number">01</span><div class="icon">⌁</div><h3>Business Intelligence</h3><p>Indicadores, painéis e modelos de informação que tornam a gestão mais clara, rápida e confiável.</p><ul><li>Power BI</li><li>KPIs</li><li>Storytelling</li></ul></article>
+          <article class="expertise-card reveal"><span class="card-number">02</span><div class="icon">◫</div><h3>Ciência de Dados</h3><p>Exploração, tratamento e análise estatística para revelar padrões e sustentar decisões.</p><ul><li>Python</li><li>SQL</li><li>Estatística</li></ul></article>
+          <article class="expertise-card reveal"><span class="card-number">03</span><div class="icon">⌘</div><h3>Machine Learning</h3><p>Modelos preditivos e técnicas de otimização orientados a problemas reais e resultados mensuráveis.</p><ul><li>ML</li><li>Meta-heurísticas</li><li>Clustering</li></ul></article>
+          <article class="expertise-card reveal"><span class="card-number">04</span><div class="icon">◇</div><h3>Liderança & Ensino</h3><p>Formação de pessoas, gestão de equipes técnicas e conexão entre pesquisa, prática e estratégia.</p><ul><li>Gestão</li><li>Docência</li><li>Pesquisa</li></ul></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-heading horizontal reveal"><div><p class="kicker">03 · Projetos</p><h2>Trabalho que gera movimento.</h2></div><p>Uma seleção de frentes que representam minha forma de pensar e construir.</p></div>
+        <div class="projects">
+          <article class="project project-featured reveal"><div class="project-visual dashboard"><span class="label">BI · SETOR PÚBLICO</span><div class="dash-line"><i></i><i></i><i></i><i></i><i></i></div><div class="dash-cards"><b>Indicadores</b><b>Qualidade</b><b>Decisão</b></div></div><div class="project-copy"><span>01 / Gestão orientada por dados</span><h3>Ecossistema de dados e BI para a Justiça</h3><p>Coordenação de dados, indicadores e painéis para apoiar o acompanhamento institucional, a qualidade da informação e a tomada de decisão no TJMA.</p><ul><li>Business Intelligence</li><li>Governança de dados</li><li>Power BI</li></ul></div></article>
+          <article class="project reveal"><div class="project-visual optimization"><span class="label">PESQUISA · OTIMIZAÇÃO</span><div class="nodes"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-copy"><span>02 / Pesquisa aplicada</span><h3>Meta-heurísticas para problemas complexos</h3><p>Pesquisa em Evolutionary Clustering Search, BRKGA e estratégias de diversidade para ampliar exploração e qualidade das soluções.</p><ul><li>ECS</li><li>BRKGA</li><li>Computação evolucionária</li></ul></div></article>
+          <article class="project reveal"><div class="project-visual education"><span class="label">ENSINO · FORMAÇÃO</span><strong>{ dados + pessoas }</strong></div><div class="project-copy"><span>03 / Conhecimento compartilhado</span><h3>Formação em tecnologia e dados</h3><p>Ensino e orientação em IA, Banco de Dados, BI e desenvolvimento, conectando fundamentos acadêmicos a desafios do mundo real.</p><ul><li>Inteligência Artificial</li><li>Banco de Dados</li><li>Mentoria</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competencias">
+      <div class="container two-cols">
+        <div class="section-heading reveal"><p class="kicker">04 · Competências</p><h2>Ferramentas são meios.<br>Resolver é o objetivo.</h2><p class="heading-note">Uma combinação de capacidade técnica, visão estratégica e comunicação.</p></div>
+        <div class="skill-groups reveal">
+          <div><h3>Dados & análise</h3><p><span>Python</span><span>SQL</span><span>Estatística</span><span>ETL</span><span>Qualidade de dados</span></p></div>
+          <div><h3>BI & comunicação</h3><p><span>Power BI</span><span>Data Storytelling</span><span>KPIs</span><span>Dashboards</span><span>Visualização</span></p></div>
+          <div><h3>IA & otimização</h3><p><span>Machine Learning</span><span>Clustering</span><span>Meta-heurísticas</span><span>Pesquisa Operacional</span></p></div>
+          <div><h3>Liderança</h3><p><span>Gestão de equipes</span><span>Docência</span><span>Mentoria</span><span>Planejamento</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container contact-inner reveal">
+        <p class="kicker">05 · Contato</p><h2>Tem um problema interessante?<br><span>Vamos conversar sobre dados.</span></h2>
+        <p>Projetos, pesquisa, ensino ou boas conversas sobre como transformar informação em impacto.</p>
+        <a class="button button-light" href="https://github.com/dadilton" target="_blank" rel="noreferrer">Fale comigo pelo GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand" href="#topo"><span class="brand-mark">DM</span><span>Dadilton Melo</span></a><p>Ciência de dados com contexto, clareza e propósito.</p><p>© <span id="year"></span></p></div></footer>
 </body>
-
 </html>
