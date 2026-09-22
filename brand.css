@@ -1,0 +1,17 @@
+.brand {
+  font-family: inherit;
+}
+
+.brand-mark {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0 5px 14px rgba(7, 26, 43, .16);
+}
+
+.brand-name {
+  font: 700 1.48rem/1 "Caveat", cursive;
+  letter-spacing: .01em;
+}
